@@ -1,0 +1,121 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="850" Loaded="Window_Loaded" 
+        >
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110*" />
+            <RowDefinition Height="11*" />
+            <RowDefinition Height="110*" />
+            <RowDefinition Height="11*" />
+            <RowDefinition Height="110*" />
+            <RowDefinition Height="11*" />
+            <RowDefinition Height="16*" />
+            <RowDefinition Height="94*"/>
+            <RowDefinition Height="11*" />
+            <RowDefinition Height="94*" />
+            <RowDefinition Height="11*" />
+            <RowDefinition Height="14*" />
+            <RowDefinition Height="51*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="213*"/>
+            <ColumnDefinition Width="213*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" TextWrapping="Wrap"  Text="     Введите для поиска" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" FontSize="22" Grid.Row="0" Margin="10,25,10,25" BorderThickness="2,2,2,2" Grid.ColumnSpan="2"/>
+        <ComboBox Grid.Column="2" x:Name="comboBox" Text="Сортировка" SelectionChanged="ComboBox_Selected" FontSize="16" Margin="10,25,10,25" >
+            <ComboBoxItem>По убыванию</ComboBoxItem>
+            <ComboBoxItem>По возрастанию</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Column="3" Text="Фильтрация" x:Name="comboBox_Copy" FontSize="16" Margin="10,25,10,25"/>
+
+        <Button  Background="White" Grid.Row="2" Grid.ColumnSpan="4" Margin="10,2,10,8" HorizontalContentAlignment="Left" Grid.RowSpan="2">
+
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="\\237main\Users\Public\06.09.02.03\2022_2023\Сессия 1\picture.png" Stretch="Uniform" StretchDirection="Both" Margin="20"/>
+                <TextBlock>    </TextBlock>
+                <StackPanel Orientation="Vertical" Width="375" Height="86">
+                    <TextBox Background="White" FontSize="14" IsReadOnly="True" TextWrapping="Wrap" Padding="8" Width="375" 
+                         AcceptsReturn="True" Height="86" VerticalScrollBarVisibility="Auto" FontFamily="Comic Sans MS" BorderThickness="0,0,0,0">
+                        Тип продукта | Наименование продукта
+                        Артикул
+                        Материалы: материал1, материал2, материал3, маетериал4, ... , материалN>
+                    </TextBox>
+                </StackPanel>
+
+            </StackPanel>
+        </Button>
+
+        <TextBlock Grid.Column="3" Grid.Row="2"  FontSize="22" Text="Стоимость" TextAlignment="Center" VerticalAlignment="Center" />
+
+        <Button  Background="White" Grid.Row="4" Grid.ColumnSpan="4" Margin="10,3,10,8" HorizontalContentAlignment="Left" Grid.RowSpan="2">
+
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="\\237main\Users\Public\06.09.02.03\2022_2023\Сессия 1\picture.png" Stretch="Uniform" StretchDirection="Both" Margin="20"/>
+                <TextBlock>    </TextBlock>
+                <StackPanel Orientation="Vertical" Width="375" Height="86">
+                    <TextBox FontSize="14" IsReadOnly="True" TextWrapping="Wrap" Padding="8" Width="375" 
+                         AcceptsReturn="True" Height="86" VerticalScrollBarVisibility="Auto" FontFamily="Comic Sans MS" BorderThickness="0,0,0,0">
+                        Тип продукта | Наименование продукта
+                        Артикул
+                        Материалы: материал1, материал2, материал3, маетериал4, ... , материалN>
+                    </TextBox>
+                </StackPanel>
+
+            </StackPanel>
+        </Button>
+
+        <TextBlock Grid.Column="3" Grid.Row="4"  FontSize="22" Text="Стоимость" TextAlignment="Center" VerticalAlignment="Center" />
+        <Button  Background="White" Grid.Row="6" Grid.ColumnSpan="4" Margin="10,3,10,0" HorizontalContentAlignment="Left" Grid.RowSpan="2">
+
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="\\237main\Users\Public\06.09.02.03\2022_2023\Сессия 1\picture.png" Stretch="Uniform" StretchDirection="Both" Margin="20"/>
+                <TextBlock>    </TextBlock>
+                <StackPanel Orientation="Vertical" Width="375" Height="86">
+                    <TextBox FontSize="14" IsReadOnly="True" TextWrapping="Wrap" Padding="8" Width="375" 
+                         AcceptsReturn="True" Height="86" VerticalScrollBarVisibility="Auto" FontFamily="Comic Sans MS" BorderThickness="0,0,0,0">
+                        Тип продукта | Наименование продукта
+                        Артикул
+                        Материалы: материал1, материал2, материал3, маетериал4, ... , материалN>
+                    </TextBox>
+                </StackPanel>
+
+            </StackPanel>
+        </Button>
+
+        <TextBlock Grid.Column="3" Grid.Row="7"  FontSize="22" Text="Стоимость" TextAlignment="Center" VerticalAlignment="Top" Margin="0,24,0,0" />
+
+        <TextBlock Grid.Column="3" Grid.Row="9"  FontSize="22" Text="Стоимость" TextAlignment="Center" VerticalAlignment="Center" />
+        <Button  Background="White" Grid.Row="9" Grid.ColumnSpan="4" Margin="10,11,10,0" HorizontalContentAlignment="Left" Grid.RowSpan="3">
+
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="\\237main\Users\Public\06.09.02.03\2022_2023\Сессия 1\picture.png" Stretch="Uniform" StretchDirection="Both" Margin="20"/>
+                <TextBlock>    </TextBlock>
+                <StackPanel Orientation="Vertical" Width="375" Height="86">
+                    <TextBox FontSize="14" IsReadOnly="True" TextWrapping="Wrap" Padding="8" Width="375" 
+                         AcceptsReturn="True" Height="86" VerticalScrollBarVisibility="Auto" FontFamily="Comic Sans MS" BorderThickness="0,0,0,0">
+                        Тип продукта | Наименование продукта
+                        Артикул
+                        Материалы: материал1, материал2, материал3, маетериал4, ... , материалN>
+                    </TextBox>
+                </StackPanel>
+
+            </StackPanel>
+        </Button>
+
+        <TextBlock Grid.Column="3" Grid.Row="9"  FontSize="22" Text="Стоимость" TextAlignment="Center" VerticalAlignment="Top" Margin="0,24,0,0" />
+
+        <Button Grid.Column="3" Grid.Row="12" Content=">" FontSize="13" Margin="180 5 15 10" Background="White" BorderThickness="0"></Button>
+        <Button Grid.Column="3" Grid.Row="12" Content="4" FontSize="13" Margin="160 5 35 10" Background="White" BorderThickness="0" ></Button>
+        <Button Grid.Column="3" Grid.Row="12" Content="3" FontSize="13" Margin="140 5 55 10" Background="White" BorderThickness="0" ></Button>
+        <Button Grid.Column="3" Grid.Row="12" Content="2" FontSize="13" Margin="120 5 75 10" Background="White" BorderThickness="0" ></Button>
+        <Button Grid.Column="3" Grid.Row="12" Content="1" FontSize="13" Margin="100 5 95 10" Background="White" BorderThickness="0" ></Button>
+    </Grid>
+</Window>
